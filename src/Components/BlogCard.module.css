@@ -1,0 +1,26 @@
+.blogCard {
+  max-width: 800px;
+  margin: auto;
+  padding: 20px;
+}
+
+.meta {
+  color: #666;
+  font-size: 14px;
+}
+
+.category {
+  font-weight: bold;
+}
+
+.description {
+  color: #444;
+  margin-top: 10px;
+}
+
+hr {
+  margin-top: 20px;
+  border: none;
+  height: 1px;
+  background-color: #ddd;
+}

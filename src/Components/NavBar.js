@@ -1,34 +1,23 @@
 import React from "react";
-function NavBar() {
+import styles from "./Navbar.module.css";
+
+function Navbar() {
   return (
-    <nav style={styles.navbar}>
-      <h2>My Portfolio</h2>
-      <ul>
+    <nav className={styles.navbar}>
+      <div className={styles.logo}> My Portfolio</div>
+      <ul className={styles.navLinks}>
         <li>
-          <a href="#about">About</a>
+          <a href="#works">Works</a>
         </li>
         <li>
-          <a href="projects">Projects</a>
+          <a href="#blog">Blog</a>
         </li>
         <li>
-          <a href="contact">Contact</a>
+          <a href="#contact">Contact</a>
         </li>
       </ul>
     </nav>
   );
 }
-const styles = {
-  navbar: {
-    display: "flex",
-    justifyContent: "space-between",
-    padding: "1rem",
-    background: "#333",
-    color: "#fff",
-  },
-  navLinks: {
-    listStyle: "none",
-    display: "flex",
-    gap: "1rem",
-  },
-};
-export default NavBar;
+
+export default Navbar;

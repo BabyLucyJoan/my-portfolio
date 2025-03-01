@@ -1,22 +1,24 @@
 import React from "react";
+import styles from "./Footer.module.css";
+import {
+  FaFacebookF,
+  FaInstagram,
+  FaTwitter,
+  FaLinkedinIn,
+} from "react-icons/fa";
+
 function Footer() {
   return (
-    <footer style={styles.footer}>
-      <p>{"\u00A9"}2025 My Portfolio. All rights reserved.</p>
+    <footer className={styles.footer}>
+      <div className={styles.icons}>
+        <FaFacebookF className={styles.icon} />
+        <FaInstagram className={styles.icon} />
+        <FaTwitter className={styles.icon} />
+        <FaLinkedinIn className={styles.icon} />
+      </div>
+      <p>Copyright ©2025 All rights reserved</p>
     </footer>
   );
 }
-const styles = {
-  footer: {
-    position: "fixed",
-    left: 0,
-    bottom: 0,
-    width: "100%",
-    textAlign: "center",
-    padding: "1rem",
-    background: "#333",
-    color: "#fff",
-    marginTop: "2rem",
-  },
-};
+
 export default Footer;
