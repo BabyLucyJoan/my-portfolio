@@ -1,9 +1,10 @@
 .footer {
+  background-color: #05021e;
   text-align: center;
   margin-top: 50px;
   padding: 20px 0;
   font-size: 14px;
-  color: #666;
+  color: #ffffff;
 }
 
 .icons {
@@ -15,7 +16,7 @@
 
 .icon {
   font-size: 18px;
-  color: #333;
+  color: #ffffff;
   cursor: pointer;
   transition: 0.3s;
 }

@@ -28,5 +28,9 @@
 }
 
 .navLinks a:hover {
-  color: red;
+  color: #007bff;
+}
+.active {
+  color: #007bff;
+  border-bottom: 2px solid red;
 }
