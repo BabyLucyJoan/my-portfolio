@@ -10,7 +10,7 @@ function HomePage() {
           Hi, I am Lucy, <br />{" "}
           <span className={styles.jobTitle}>Front-end Developer</span>
         </h1>
-        <p>
+        <p className={styles.p}>
           I’m a web developer with a passion for creating dynamic,
           user-friendly, and visually appealing web applications. I specialize
           in building responsive interfaces with React, ensuring seamless

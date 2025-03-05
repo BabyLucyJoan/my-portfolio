@@ -4,7 +4,7 @@ function Contact() {
   return (
     <div className={styles.contactContainer}>
       <h1>Contact Me</h1>
-      <p>
+      <p className={styles.p}>
         Feel free to reach out to me via the form below or through my social
         media.
       </p>

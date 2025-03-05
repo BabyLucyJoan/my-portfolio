@@ -10,6 +10,10 @@
   flex-direction: column;
   gap: 10px;
 }
+.p {
+  font-weight: 500;
+  font-size: large;
+}
 
 input,
 textarea {

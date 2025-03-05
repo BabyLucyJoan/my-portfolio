@@ -1,7 +1,7 @@
 import styles from "./Navbar.module.css";
 import { Link } from "react-router-dom";
 
-function Navbar() {
+function NavBar() {
   return (
     <nav className={styles.navbar}>
       <div className={styles.logo}> My Portfolio</div>
@@ -20,4 +20,4 @@ function Navbar() {
   );
 }
 
-export default Navbar;
+export default NavBar;
