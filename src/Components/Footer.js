@@ -29,6 +29,7 @@ import {
   FaInstagram,
   FaTwitter,
   FaLinkedinIn,
+  FaGithub,
 } from "react-icons/fa";
 import styles from "./Footer.module.css";
 
@@ -42,6 +43,13 @@ function Footer() {
           rel="noreferrer"
         >
           <FaFacebookF className={styles.icon} />
+        </a>
+        <a
+          href="https://github.com/BabyLucyJoan"
+          target="_blank"
+          rel="noreferrer"
+        >
+          <FaGithub className={styles.icon} />
         </a>
 
         <a
