@@ -1,17 +1,16 @@
 .backButton {
-  display: inline-flex;
-  align-items: center;
-  gap: 2px;
-  padding: 5px 15px;
-  font-size: 16px;
-  font-weight: bold;
-  color: white;
+  display: block;
+  width: 100%;
+  max-width: 300px; /* Limits how wide the button can get */
+  margin: 1rem auto 0; /* Centers horizontally and adds top margin */
+  padding: 12px;
   background-color: #007bff;
+  color: #fff;
   border: none;
   border-radius: 5px;
+  font-weight: bold;
   cursor: pointer;
-  transition: background 0.3s ease;
-  text-decoration: none;
+  transition: 0.3s ease-in-out;
 }
 
 .backButton:hover {
@@ -21,4 +20,10 @@
 .backButton svg {
   width: 20px;
   height: 20px;
+}
+
+@media screen and (max-width: 600px) {
+  .backButton {
+    width: 100%; /* Make the button full width */
+  }
 }
