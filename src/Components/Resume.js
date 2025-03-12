@@ -3,7 +3,7 @@ import styles from "./Resume.module.css";
 import BackButton from "./BackButton";
 
 function Resume() {
-  const resumeUrl = "/resume.pdf"; // Update with the actual PDF path
+  const resumeUrl = "/resume.pdf";
 
   return (
     <div className={styles.resumeContainer}>
