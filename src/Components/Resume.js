@@ -7,8 +7,8 @@ function Resume() {
 
   return (
     <div className={styles.resumeContainer}>
-      <BackButton />
       <iframe src={resumeUrl} title="Resume" className={styles.resumeViewer} />
+      <BackButton />
     </div>
   );
 }
