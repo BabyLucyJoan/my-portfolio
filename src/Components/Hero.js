@@ -17,7 +17,7 @@ function Hero() {
         <ResumeButton />
       </div>
       <div className={styles.imageContainer}>
-        <img src="/profile.JPG" alt="Lucy" className={styles.profileImage} />
+        <img src="/profile1.jpeg" alt="Lucy" className={styles.profileImage} />
       </div>
     </section>
   );
