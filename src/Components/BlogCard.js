@@ -1,5 +1,6 @@
 import React from "react";
 import styles from "./BlogCard.module.css";
+import BackButton from "./BackButton";
 
 function BlogCard({ title, videoUrl }) {
   return (
@@ -12,6 +13,7 @@ function BlogCard({ title, videoUrl }) {
         allowFullScreen
         title={title}
       ></iframe>
+      <BackButton />
     </div>
   );
 }
