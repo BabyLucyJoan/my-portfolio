@@ -12,7 +12,6 @@ function App() {
   return (
     <Router>
       <div className={styles.appContainer}>
-        <NavBar />
         <main className={styles.mainContent}>
           <Routes>
             <Route path="/" element={<HomePage />} />
