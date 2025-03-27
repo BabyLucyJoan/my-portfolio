@@ -1,23 +1,3 @@
-// import React from "react";
-// import { Link } from "react-router-dom";
-// import styles from "./NavBar.module.css";
-
-// function NavBar() {
-//   return (
-//     <nav className={styles.navbar}>
-//       <h1>My Portfolio</h1>
-
-//       <div className={styles.navbarMenu}>
-//         <Link to="/">Home</Link>
-//         <Link to="/blog">Blog</Link>
-//         <Link to="/contact">Contact</Link>
-//       </div>
-//     </nav>
-//   );
-// }
-
-// export default NavBar;
-
 import React from "react";
 import { Link } from "react-router-dom";
 import styles from "./NavBar.module.css";
@@ -25,7 +5,7 @@ import styles from "./NavBar.module.css";
 function NavBar() {
   return (
     <nav className={styles.navbar}>
-      <h1>My Portfolio</h1>
+      <h1 className={styles.h1}>My Portfolio</h1>
 
       {/* Navigation Links (For Large Screens) */}
       <div className={styles.navLinks}>
@@ -43,6 +23,7 @@ function NavBar() {
           <Link to="/">Home</Link>
           <Link to="/blog">Blog</Link>
           <Link to="/contact">Contact</Link>
+          <Link to="/NoteAngel">NoteAngel</Link>
         </div>
       </div>
     </nav>

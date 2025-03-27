@@ -11,3 +11,12 @@
   margin-top: 60px; /* Offset for fixed navbar */
   margin-bottom: 50px; /* Offset for fixed footer */
 }
+.light {
+  background: linear-gradient(to right, #eef2f3, #dfe9f3);
+  color: #333;
+}
+
+.dark {
+  background: linear-gradient(to right, #1a1a2e, #16213e);
+  color: #fff;
+}
