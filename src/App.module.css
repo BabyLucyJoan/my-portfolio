@@ -1,0 +1,27 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap");
+
+body {
+  font-family: "Inter", sans-serif;
+}
+
+.appContainer {
+  width: 100%; /* Ensure full width */
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  margin: 0; /* Reset default margin */
+  padding: 0; /* Reset default padding */
+  overflow: hidden; /* Prevent unwanted scrolling */
+}
+
+.mainContent {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center content */
+  justify-content: center; /* Optional: Center vertically */
+  margin: 0; /* Reset margin */
+  padding: 0; /* Reset padding */
+  overflow-x: hidden; /* Prevent horizontal scroll */
+  width: 100%; /* Ensure full width */
+}

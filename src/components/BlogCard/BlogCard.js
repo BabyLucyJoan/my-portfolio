@@ -1,6 +1,6 @@
 import React from "react";
 import styles from "./BlogCard.module.css";
-import BackButton from "./BackButton";
+import BackButton from "../BackButton/BackButton";
 
 function BlogCard({ title, videoUrl }) {
   return (

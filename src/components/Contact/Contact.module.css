@@ -1,0 +1,201 @@
+/* Contact.module.css */
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 2rem;
+  background: #f5f5f7;
+}
+
+/* Phone Body */
+.phone {
+  position: relative;
+  width: 320px;
+  height: 650px;
+  background: #000;
+  border-radius: 40px;
+  border: 12px solid #1a1a1a;
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.3),
+    inset 0 0 0 2px rgba(255, 255, 255, 0.05);
+  overflow: hidden;
+}
+
+/* Status Bar */
+.statusBar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5rem 1.5rem;
+  background: rgba(0, 0, 0, 0.2);
+  color: white;
+  font-size: 0.8rem;
+  font-weight: 600;
+}
+
+.statusIcons {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.signal,
+.wifi,
+.battery {
+  display: inline-block;
+  background: white;
+}
+
+.signal {
+  width: 15px;
+  height: 10px;
+  clip-path: polygon(0% 100%, 25% 50%, 50% 70%, 75% 30%, 100% 60%);
+}
+
+.wifi {
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  border: 2px solid;
+  border-color: white transparent transparent transparent;
+}
+
+.battery {
+  width: 20px;
+  height: 10px;
+  border: 1px solid white;
+  position: relative;
+}
+
+.battery::after {
+  content: "";
+  position: absolute;
+  right: -3px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 2px;
+  height: 5px;
+  background: white;
+}
+
+/* Screen Content */
+.screen {
+  height: 100%;
+  padding: 1.5rem;
+  background: white;
+  display: flex;
+  flex-direction: column;
+}
+
+.header {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.icon {
+  font-size: 1.5rem;
+  color: #007aff;
+  margin-bottom: 0.5rem;
+}
+
+.header h1 {
+  font-size: 1.8rem;
+  color: #1a1a1a;
+  margin-bottom: 0.5rem;
+}
+
+.header p {
+  color: #666;
+  font-size: 0.9rem;
+}
+
+/* Form Styles */
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  flex-grow: 1;
+}
+
+.inputGroup {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.inputGroup label {
+  font-size: 0.9rem;
+  color: #555;
+  font-weight: 500;
+}
+
+.inputGroup input,
+.inputGroup textarea {
+  padding: 0.8rem;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  font-size: 1rem;
+  background: #f9f9f9;
+  transition: all 0.2s ease;
+}
+
+.inputGroup input:focus,
+.inputGroup textarea:focus {
+  border-color: #007aff;
+  background: white;
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(0, 122, 255, 0.1);
+}
+
+.inputGroup textarea {
+  resize: none;
+  min-height: 120px;
+}
+
+.submitButton {
+  background: #007aff;
+  color: white;
+  border: none;
+  padding: 1rem;
+  border-radius: 10px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  margin-top: auto;
+  transition: all 0.2s ease;
+}
+
+.submitButton:hover {
+  background: #0062cc;
+}
+
+/* Home Indicator */
+.homeIndicator {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 120px;
+  height: 5px;
+  background: #333;
+  border-radius: 3px;
+  opacity: 0.8;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 400px) {
+  .phone {
+    width: 300px;
+    height: 600px;
+    border-width: 10px;
+  }
+
+  .screen {
+    padding: 1.2rem;
+  }
+}

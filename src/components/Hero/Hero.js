@@ -1,6 +1,6 @@
 import React from "react";
 import styles from "./Hero.module.css";
-import ResumeButton from "./ResumeButton";
+import ResumeButton from "../ResumeButton/ResumeButton";
 
 function Hero() {
   return (

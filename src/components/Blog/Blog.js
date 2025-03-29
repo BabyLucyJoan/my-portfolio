@@ -1,13 +1,13 @@
 import React from "react";
 import styles from "./Blog.module.css";
-import BlogCard from "./BlogCard";
+import BlogCard from "../BlogCard/BlogCard";
 
 function Blog() {
   const blogPosts = [
     {
       id: 1,
       title: "Intro to Tech And Teach",
-      videoUrl: "https://vm.tiktok.com/ZMBkwJ4Vo/",
+      videoUrl: "https://vm.tiktok.com/embed/YOUR_VIDEO_ID_HERE",
     },
     {
       id: 2,

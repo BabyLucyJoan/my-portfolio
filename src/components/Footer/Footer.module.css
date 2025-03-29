@@ -1,0 +1,42 @@
+.footer {
+  background-color: var(--nav-bg);
+  color: var(--text-color);
+  text-align: center;
+  padding: 0.6rem 0; /* Reduced padding */
+  width: 100%;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.icons {
+  display: flex;
+  justify-content: center;
+  gap: 0.8rem; /* Reduced spacing between icons */
+  margin-bottom: 0.2rem;
+}
+.icon {
+  color: var(--text-color); /* Ensure it adapts to theme */
+  font-size: 1rem; /* Adjust size */
+  transition: color var(--transition-speed) ease;
+}
+
+[data-theme="dark"] .icon {
+  color: white; /* Force white in dark mode */
+}
+[data-theme="dark"] .footer {
+  color: white; /* Ensure white in dark mode */
+}
+.icon:hover {
+  color: var(--primary-color); /* Keep hover color consistent */
+}
+
+.icon:hover {
+  color: var(--primary-color);
+  transform: scale(1.05);
+}
+
+/* Adjust footer spacing for mobile */
+@media (max-width: 768px) {
+  .footer {
+    padding: 0.5rem 0;
+  }
+}
