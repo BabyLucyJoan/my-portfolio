@@ -74,6 +74,7 @@
   cursor: pointer;
   margin-top: 0.5rem;
   backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
   transition: background 0.3s ease;
   width: fit-content;
 }
@@ -133,6 +134,7 @@
     align-items: center;
     padding: 0.8rem;
     backdrop-filter: blur(6px);
+    -webkit-backdrop-filter: blur(5px);
   }
 
   .navLinks.open {
